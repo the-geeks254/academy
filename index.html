@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bright Future Academy — Nurturing Competence, Cultivating Character</title>
+  <meta name="description" content="Bright Future Academy in Kenya delivers the Competency-Based Curriculum (CBC): holistic, practical, and skill-based learning for a brighter future." />
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:," />
+  <script defer src="18js.js"></script>
+  <script defer src="script.js"></script>
+  <meta property="og:title" content="Bright Future Academy" />
+  <meta property="og:description" content="CBC-focused school in Kenya nurturing competence and character." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="hero.jpeg" />
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"School",
+    "name":"Bright Future Academy",
+    "address":{"@type":"PostalAddress","addressCountry":"KE"},
+    "url": "https://example.com",
+    "description":"CBC-focused day/boarding school in Kenya.",
+    "sameAs":["https://facebook.com/","https://instagram.com/","https://twitter.com/"]
+  }
+  </script>
+  <style type="text/css">
+.auto-style1 {
+	color: #FFFF00;
+	background-color: #FFFFFF;
+}
+.auto-style2 {
+	color: #00FFFF;
+}
+.auto-style3 {
+	color: #FFFF00;
+}
+</style>
+</head>
+<body>
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container flex between center">
+      <div class="ticker" aria-label="Latest news">
+        <span class="ticker-icon">📣</span>
+        <div id="news-ticker" class="ticker-track" role="marquee" aria-live="polite"></div>
+      </div>
+      <div class="top-actions">
+        <button id="lang-toggle" class="chip" aria-label="Toggle language">Swahili / English</button>
+        <a class="chip outline" href="admissions.html" data-18js="cta.apply">Apply</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container flex between center">
+      <a class="brand" href="index.html">
+        <div class="brand-mark">A</div>
+        <div class="brand-text">
+          <strong data-18js="brand.name">Bright Future Academy</strong>
+          <small data-18js="brand.slogan">Nurturing Competence, Cultivating Character</small>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+        <ul id="nav-menu">
+          <li><a href="about.html" data-18js="nav.about">About</a></li>
+          <li><a href="academics.html" data-18js="nav.academics">CBC Model</a></li>
+          <li><a href="student-life.html" data-18js="nav.studentlife">Student Life</a></li>
+          <li><a href="gallery.html" data-18js="nav.gallery">Gallery</a></li>
+          <li><a href="news.html" data-18js="nav.news">News & Events</a></li>
+          <li><a href="contact.html" class="btn-sm" data-18js="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <picture>
+      <img src="hero.jpeg" alt="Students engaged in hands-on CBC learning activities" loading="eager">
+    </picture>
+    <div class="hero-overlay">
+      <div class="container">
+        <h1 id="hero-greeting" data-18js="home.heroTitle">Welcome to Bright Future Academy</h1>
+        <p class="lead" data-18js="home.heroLead">
+          Empowering learners through Kenya's Competency-Based Curriculum for a brighter tomorrow.
+        </p>
+        <div class="hero-cta">
+          <a href="academics.html" class="btn" data-18js="home.cta1">Our CBC Approach</a>
+          <a href="admissions.html" class="btn ghost" data-18js="home.cta2">Admissions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick highlights -->
+  <section class="section container grid-3 feature-cards">
+    <article class="card">
+      <img src="lab.jpeg" alt="Science lab practicals" loading="lazy">
+      <div>
+        <h3 data-18js="home.h1" class="auto-style1">Hands‑on Learning</h3>
+        <p data-18js="home.p1" class="auto-style2"><strong>Projects, portfolios, and real‑world tasks build lasting competence.</strong></p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="garden.jpeg" alt="School garden project" loading="lazy">
+      <div>
+        <h3 data-18js="home.h2" class="auto-style3">Holistic Growth</h3>
+        <p data-18js="home.p2" class="auto-style2"><strong>Character, citizenship, and creativity are nurtured daily.</strong></p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="arts.jpeg" alt="Creative arts" loading="lazy">
+      <div>
+        <h3 data-18js="home.h3" class="auto-style3">CBC‑Aligned</h3>
+        <p data-18js=""="home.p3" class="auto-style2"><strong>Fully aligned to Kenya’s 2‑6‑6‑3 CBC structure and assessments.</strong></p>
+      </div>
+    </article>
+  </section>
+
+  <!-- Headteacher welcome -->
+  <section class="section alt">
+    <div class="container two-col">
+      <div>
+        <h2 data-18js="home.welcomeTitle">A Message from the Head</h2>
+        <p data-18js="home.welcomeBody">
+          Dear parents and learners, welcome to a school where competence meets character. Our teams design engaging,
+          practical learning experiences that build the seven core competencies every day. Karibuni!
+        </p>
+        <a class="link-arrow" href="about.html" data-18js="home.welcomeLink">Read more</a>
+      </div>
+      <img src="library.jpeg" alt="Head's welcome in the library" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Stats / trust -->
+  <section class="section container stats">
+    <div class="stat"><strong>98%</strong><span data-i18n="home.s1">Parent Satisfaction</span></div>
+    <div class="stat"><strong>30+</strong><span data-i18n="home.s2">Clubs & Sports</span></div>
+    <div class="stat"><strong>15:1</strong><span data-i18n="home.s3">Learner–Teacher Ratio</span></div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section alt">
+    <div class="container">
+      <h2 data-18js="home.testimonials">What Families Say</h2>
+      <div class="carousel" id="testimonials" aria-label="Testimonials"></div>
+    </div>
+  </section>
+
+  <!-- CTA band -->
+  <section class="cta-band">
+    <div class="container flex between center">
+      <h3 data-18js="home.ctaband">Admissions for 2025 are open for Early Years, Middle School, and Senior School.</h3>
+      <a href="admissions.html" class="btn" data-18js="cta.apply">Apply</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container grid-4">
+      <div>
+        <h4 data-18js="footer.about">About</h4>
+        <p data-18js="footer.aboutText">CBC-focused day & boarding school dedicated to lifelong learning and community impact.</p>
+      </div>
+      <div>
+        <h4 data-18js="footer.links">Quick Links</h4>
+        <ul class="list">
+          <li><a href="academics.html" data-18js="nav.academics">CBC Model</a></li>
+          <li><a href="admissions.html" data-18js="nav.admissions">Admissions</a></li>
+          <li><a href="news.html" data-18js="nav.news">News & Events</a></li>
+          <li><a href="contact.html" data-18js="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-18js="footer.contact">Contact</h4>
+        <ul class="list">
+          <li>+254 700 000 000</li>
+          <li>info@brightfutureacademy.ac.ke</li>
+          <li>Maua, Kenya</li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-18js="footer.follow">Follow</h4>
+        <div class="social">
+          <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+          <a href="#"><img src="icons/twitter.svg" alt="Twitter"></a>
+        </div>
+      </div>
+    </div>
+    <div class="legal">© <span id="year"></span> Made with ❤️ from Bright Future Academy • All rights reserved.</div>
+  </footer>
+</body>
+</html>
