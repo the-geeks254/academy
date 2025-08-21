@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>News & Events — [Your Name] Academy</title>
+  <meta name="description" content="Announcements, calendar, and student achievements." />
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="18js.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="topbar"><div class="container flex between center"><div class="ticker"><span class="ticker-icon">📣</span><div id="news-ticker"></div></div><div class="top-actions"><button id="lang-toggle" class="chip">Swahili / English</button><a class="chip outline" href="admissions.html">Apply</a></div></div></div>
+  <header class="site-header"><div class="container flex between center"><a class="brand" href="index.html"><div class="brand-mark">A</div><div class="brand-text"><strong>Bright Future Academy</strong><small>Nurturing Competence, Cultivating Character</small></div></a><nav class="main-nav"><button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button><ul id="nav-menu"><li><a href="about.html">About</a></li><li><a href="academics.html">CBC Model</a></li><li><a href="student-life.html">Student Life</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="news.html" class="active">News & Events</a></li><li><a href="contact.html" class="btn-sm">Contact</a></li></ul></nav></div></header>
+
+  <section class="page-hero small">
+    <h1>News & Events</h1>
+    <p>Stay updated with our community.</p>
+  </section>
+
+  <section class="section container two-col">
+    <div>
+      <h2>Latest News</h2>
+      <div id="news-list" class="stack"></div>
+    </div>
+    <aside>
+      <h3>Upcoming Events</h3>
+      <ul id="events-list" class="list timeline"></ul>
+      <h3>Testimonials</h3>
+      <blockquote class="quote">“CBC at [Your Name] Academy helped my child become confident and creative.” — Parent</blockquote>
+    </aside>
+  </section>
+
+  <footer class="site-footer simple"><div class="legal">© <span id="year"></span> [Your Name] Academy</div></footer>
+</body>
+</html>

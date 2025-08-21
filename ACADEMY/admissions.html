@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admissions — Bright Future Academy</title>
+  <meta name="description" content="Admissions process, requirements, and transparent fees for CBC-aligned schooling." />
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="18js.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="topbar"><div class="container flex between center"><div class="ticker"><span class="ticker-icon">📣</span><div id="news-ticker"></div></div><div class="top-actions"><button id="lang-toggle" class="chip">Swahili / English</button><a class="chip outline" href="#apply">Apply</a></div></div></div>
+  <header class="site-header"><div class="container flex between center"><a class="brand" href="index.html"><div class="brand-mark">A</div><div class="brand-text"><strong>[Your Name] Academy</strong><small>Nurturing Competence, Cultivating Character</small></div></a><nav class="main-nav"><button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button><ul id="nav-menu"><li><a href="about.html">About</a></li><li><a href="academics.html">CBC Model</a></li><li><a href="student-life.html">Student Life</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="news.html">News & Events</a></li><li><a href="contact.html" class="btn-sm">Contact</a></li></ul></nav></div></header>
+
+  <section class="page-hero small">
+    <h1>Admissions</h1>
+    <p>Transparent, supportive, and family‑friendly.</p>
+  </section>
+
+  <section class="section container two-col">
+    <div>
+      <h2>Process</h2>
+      <ol class="steps">
+        <li>Submit inquiry or application (online form below).</li>
+        <li>Campus tour & parent interview.</li>
+        <li>Placement activities (age‑appropriate tasks/observations).</li>
+        <li>Offer & acceptance.</li>
+        <li>Onboarding and orientation.</li>
+      </ol>
+      <h3>Requirements</h3>
+      <ul class="check">
+        <li>Birth certificate (copy)</li>
+        <li>Recent passport photo</li>
+        <li>Previous school report (if applicable)</li>
+        <li>Medical information</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Fees Structure (KES)</h2>
+      <div class="table-responsive">
+        <table class="table">
+          <thead><tr><th>Level</th><th>Tuition / Term</th><th>Meals</th><th>Activities</th><th>Total</th></tr></thead>
+          <tbody>
+            <tr><td>Early Years</td><td>45,000</td><td>10,000</td><td>5,000</td><td>60,000</td></tr>
+            <tr><td>Middle School</td><td>65,000</td><td>12,000</td><td>6,000</td><td>83,000</td></tr>
+            <tr><td>Senior School</td><td>85,000</td><td>15,000</td><td>8,000</td><td>108,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted">* Uniform, transport, and exam fees billed separately where applicable.</p>
+    </div>
+  </section>
+
+  <section id="apply" class="section alt container">
+    <h2>Apply / Inquiry Form</h2>
+    <form id="admissions-form" class="form card soft" novalidate>
+      <div class="grid-2">
+        <label>Parent/Guardian Name<input type="text" name="guardian" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Phone<input type="tel" name="phone" required pattern="^\\+?\\d{9,15}$"></label>
+        <label>Learner Name<input type="text" name="learner" required></label>
+        <label>Applying for Level
+          <select name="level" required>
+            <option value="">Select</option>
+            <option>Early Years</option>
+            <option>Middle School</option>
+            <option>Senior School</option>
+          </select>
+        </label>
+        <label>Preferred Term
+          <select name="term" required>
+            <option value="">Select</option>
+            <option>Term 1</option>
+            <option>Term 2</option>
+            <option>Term 3</option>
+          </select>
+        </label>
+      </div>
+      <label>Message<textarea name="message" rows="4" placeholder="Tell us about your child..."></textarea></label>
+      <div class="flex between center">
+        <label class="checkline"><input type="checkbox" required> I agree to the privacy policy.</label>
+        <button type="submit" class="btn">Submit</button>
+      </div>
+      <p id="admissions-status" class="status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <footer class="site-footer simple"><div class="legal">© <span id="year"></span> Bright Future Academy</div></footer>
+</body>
+</html>
